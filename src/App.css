@@ -1,0 +1,148 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+  background-color:#87ff46
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #050506;
+}
+
+h2 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+  color: #020202;
+}
+
+/* Container for user and admin view */
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.container > div {
+  width: 48%;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+label {
+  font-weight: bold;
+  margin-right: 10px;
+  display: block;
+  margin-top: 10px;
+}
+
+input, select {
+  padding: 8px;
+  width: 100%;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #0d4e79;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+button:hover {
+  background-color: #4629b9;
+}
+
+/* Specific styles for the availability slots */
+.slot-list {
+  margin-top: 20px;
+}
+
+.slot-item {
+  background-color: #e3f2fd;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slot-item span {
+  font-weight: bold;
+}
+
+.remove-button {
+  padding: 5px 10px;
+  background-color: #e74c3c;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  cursor: pointer;
+}
+
+.remove-button:hover {
+  background-color: #c0392b;
+}
+
+/* Availability Day & Time Section */
+select, input[type="time"] {
+  width: 100%;
+}
+
+input[type="time"] {
+  padding: 5px;
+}
+
+
+.admin-view {
+  margin-top: 20px;
+}
+
+.admin-view select {
+  margin-bottom: 20px;
+}
+
+.session-type {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.session-type select {
+  width: 50%;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .container > div {
+    width: 100%;
+  }
+
+  input, select {
+    width: 100%;
+  }
+
+  .session-type select {
+    width: 100%;
+  }
+}
